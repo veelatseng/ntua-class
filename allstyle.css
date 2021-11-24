@@ -1,0 +1,26 @@
+/* html,
+body {
+  padding: 0;
+  margin: 0;
+  } */
+
+  .note {
+    background: #ccc;
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    line-height: 160%;
+    margin-bottom: 1rem;
+  }
+
+  .note ul {
+  }
+
+  .note ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .note a {
+    min-width: 20%;
+    display: inline-block;
+    text-decoration: underline;
+  }
