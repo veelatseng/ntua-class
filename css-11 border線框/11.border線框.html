@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11.border線框</title>
+  <style>
+    div {
+      height: 100px;
+      line-height: 100px;
+      width: 100px;
+      text-align: center;
+      margin-right: 2rem;
+      float: left;
+    }
+    /* 實線  */
+    
+    .box1 {
+      border-right-style: solid;
+      border-bottom-style: dashed;
+    }
+    /* 虛線  */
+    
+    .box2 {
+      border-style: dashed;
+    }
+    /* 雙線  */
+    
+    .box3 {
+      border-style: double;
+    }
+    /* 點線  */
+    
+    .box4 {
+      border-style: dotted;
+    }
+    /* 凹線  */
+    
+    .box5 {
+      border-style: groove;
+    }
+    /* 凸線  */
+    
+    .box6 {
+      border-style: ridge;
+    }
+    /* 嵌入線  */
+    
+    .box7 {
+      border-style: inset;
+    }
+    /* 浮出線  */
+    
+    .box8 {
+      border-style: outset;
+    }
+    .box9 {
+      width: 0!important;
+      height: 0!important;
+      border-top: red 50px solid;
+      border-right: orange 50px solid;
+      border-bottom: blue 50px solid;
+      border-left: green 50px solid;
+      margin: 1rem 0;
+      clear: both;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      clear: both;
+    }
+    
+    li {
+      margin-bottom: 10px;
+      line-height: 200%;
+    }
+    
+    li::before {
+      content: "";
+      width: 0;
+      height: 0;
+      display: inline-block;
+      border: transparent 6px solid;
+      border-left-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>11.border線框</h3>
+  <div class="box1">
+    solid 實線
+  </div>
+  <div class="box2">
+    dashed 虛線
+  </div>
+  <div class="box3">
+    double 雙線
+  </div>
+  <div class="box4">
+    dotted 點線
+  </div>
+  <div class="box5">
+    groove 凹線
+  </div>
+  <div class="box6">
+    ridge 凸線
+  </div>
+  <div class="box7">
+    inset 嵌入線
+  </div>
+  <div class="box8">
+    outset 浮出線
+  </div>
+  <div class="box9"></div>
+  <ul>
+    <li>列表</li>
+    <li>列表</li>
+    <li>列表</li>
+    <li>列表</li>
+  </ul>
+</body>
+
+</html>

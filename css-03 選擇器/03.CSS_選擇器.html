@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03.選擇器</title>
+  <!-- 外部樣式表 (external style sheet) ：將 CSS 設定寫在另外一個檔案中，再從 HTML 頁面中引入 -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* 內部樣式表 (internal style sheet) ：將 CSS 設定直接寫在網頁中 */
+    
+    p {
+      color: blue;
+    }
+    
+    .test {
+      color: orange;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h3 class="test">03.選擇器</h3>
+  <p>為某一類標籤設定CSS</p>
+  <!-- 行內樣式 (inline style)  ：將 CSS 設定直接嵌在 HTML 標籤內 -->
+  <p>行內樣式 (inline style)：將 CSS 設定直接嵌在 HTML 標籤內</p>
+  <p class="test">為特定元素設定CSS：選擇器前面加一個 . ，用來辨識要被選擇的標籤</p>
+  <div class="test">任何元素標籤都可以使用，可以在 HTML 檔中多處重複使用</div>
+</body>
+
+</html>

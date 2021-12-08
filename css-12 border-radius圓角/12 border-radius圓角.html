@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12.border-radius圓角</title>
+  <style>
+    
+    div {
+      background: #0e74cb;
+      height: 150px;
+      line-height: 150px;
+      width: 150px;
+      text-align: center;
+      margin-right: 2rem;
+      float: left;
+    }
+    
+    .box1 {
+      border-radius: 20px;
+    }
+    
+    .box2 {
+      border-radius: 50%;
+    }
+    
+    .box3 {
+      border-radius: 3em 7em 2em 4em;
+    }
+    
+    .box4 {
+      border-radius: 2em 4em;
+    }
+    
+    .box5 {
+      border-radius: 2em/4em;
+    }
+    
+    .box6 {
+      border-radius: 70% 30% 30% 70%/60% 40% 60% 40%;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>12.border-radius圓角</h3>
+  <div class="box1">
+    四個角一樣
+  </div>
+  <div class="box2">
+    四個角一樣50%
+  </div>
+  <div class="box3">
+    左上 右上 右下 左下
+  </div>
+  <div class="box4">
+    左上右下 右上左下
+  </div>
+  <div class="box5">
+    水平半徑/垂直半徑;
+  </div>
+  <div class="box6">
+    水平半徑/垂直半徑;
+  </div>
+</div>
+</body>
+
+</html>

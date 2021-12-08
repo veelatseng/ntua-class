@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04.選擇器</title>
+  <style>
+    /* 全域選擇器：
+    *符號為全域選擇器，選取頁面上所有元素 */
+    /* * {
+      margin: 0;
+      padding: 0;
+      } */
+    /* 類別選擇器 (Class selectors)：
+    .符號為類別選擇器，選擇頁面上相符的class名稱 */
+    
+    p {
+      margin-bottom: 1rem;
+    }
+    
+    .test {
+      color: red;
+    }
+    /* ID選擇器 (ID selectors)：
+    #符號為ID選擇器，選取頁面上相符的ID名稱 */
+    
+    #test {
+      color: green;
+    }
+    /* 在原本的元素之前加入內容 */
+    
+    span {
+      padding: 4px;
+      border: 1px solid #ccc;
+    }
+    
+    span::before {
+      content: "::before";
+      color: blue;
+    }
+    
+    span::after {
+      content: "::after";
+      color: purple;
+    }
+    
+    ul {
+      margin: 2rem 0;
+    }
+    
+    ul li:first-child {
+      color: red;
+    }
+    
+    ul li:last-child {
+      color: blue;
+    }
+    
+    ul li:nth-child(3) {
+      color: green;
+    }
+    
+    .pseudo {}
+    
+    .pseudo p:first-child {
+      color: red;
+    }
+    
+    .pseudo p:nth-child(2) {
+      color: orange;
+    }
+    
+    .pseudo p:last-child {
+      color: blue;
+    }
+    
+    .pseudo h4:nth-of-type(1) {
+      color: green;
+      /* first-of-type */
+    }
+    
+    .pseudo h4:first-child {
+      color: yellow;
+      /* 無效 */
+    }
+    
+    .pseudo h4:last-of-type {
+      color: green;
+    }
+    
+    h5:empty {
+      width: 100px;
+      height: 40px;
+      background: pink;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>類別選擇器 (Class selectors)：</h3>
+  <p class="test">.符號為類別選擇器，選擇頁面上相符的class名稱</p>
+  <h3>ID選擇器 (ID selectors)：</h3>
+  <p id="test">#符號為ID選擇器，選取頁面上相符的ID名稱</p>
+
+  <h3>虛擬元素選擇器 (Pseudo-elements)： 會繼承原本元素的屬性</h3><br>
+  <span>內容</span>
+  <ul>
+    <li>li:first-child</li>
+    <li>li:nth-child(2)</li>
+    <li>li:nth-child(3)</li>
+    <li>li:last-child</li>
+  </ul>
+  <div class="pseudo">
+    <p>p:first-child</p>
+    <h5></h5>
+    <p>p:nth-child(2)</p>
+    <h4>h4:nth-of-type(1)</h4>
+    <h4>h4</h4>
+    <h4>h4:last-of-type</h4>
+    <p>p:last-child</p>
+  </div>
+</body>
+
+</html>

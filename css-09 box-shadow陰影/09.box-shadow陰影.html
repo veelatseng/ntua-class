@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>09.box-shadow陰影</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      background: #ccc;
+      margin: 20px;
+    }
+    /* x軸   y軸  顏色 */
+    
+    .box1 {
+      box-shadow: 10px 10px #000;
+      /* box-shadow: 60px -16px #000; */
+    }
+    /* x軸  y軸  模糊半徑  顏色  第三個值將為模糊半徑的大小 */
+    
+    .box2 {
+      box-shadow: 5px 5px 5px #000;
+      /* box-shadow: 5px 5px 5px #000; */
+    }
+    /* x軸  y軸  模糊半徑  擴散距離  顏色 四個值為擴散距離半徑的大小 */
+    
+    .box3 {
+      box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6);
+      /* box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2); */
+    }
+    /* x軸  y軸  顏色  內陰影 */
+    
+    .box4 {
+      box-shadow: 5px 5px 5px #000 inset;
+      /* box-shadow: 5em 1em #000 inset; */
+    }
+    
+    .box5 {
+      box-shadow: 3px 3px red, -1em 0 0.4em yellow inset;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>09.box-shadow陰影</h3>
+  <div class="box box1">box1</div>
+  <div class="box box2">box2</div>
+  <div class="box box3">box3</div>
+  <div class="box box4">box4</div>
+  <div class="box box5">box5</div>
+</body>
+
+</html>

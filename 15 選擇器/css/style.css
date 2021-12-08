@@ -1,7 +1,0 @@
-/* 
-外部樣式表 (external style sheet) ：
-將 CSS 設定寫在另外一個檔案中，再從 HTML 頁面中引入  
-*/
-p{
-	color: red;
-}
