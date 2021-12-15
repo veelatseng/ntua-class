@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>15.Box Model</title>
+  <style>
+    .boxModel1 {
+      padding: 1em;
+      margin: 0 auto 1em;
+      background: #ccc;
+    }
+    
+    .boxModel1>div {
+      background: #F1F1F1;
+      width: 900px;
+      box-sizing: border-box;
+    }
+    
+    .boxModel1 .a {
+      padding: 2em;
+    }
+    
+    .boxModel1 .b {
+      border: 12px dotted red;
+    }
+    
+    .boxModel1 .c {
+      margin: 2em;
+      padding: 2em;
+    }
+    .boxModel2>div {
+      background: #ccc;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      word-break: break-all;
+      font-size: 14px;
+    }
+    
+    .boxModel2 .box-1 {
+    }
+    .boxModel2 .box-2 {
+      margin: 10px;
+    }
+    .boxModel2 .box-3 {
+      padding: 10px;
+    }
+    .boxModel2 .box-4 {
+      border: 10px solid #444;
+    }
+    .boxModel2 .box-5 {
+      margin: 10px;
+      padding: 10px;
+      border: 10px solid #444;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>15.Box Model</h3>
+  <div class="boxModel1">
+    <h4>Padding 內邊界</h4>
+    <div class="a">繼《艾蜜莉在巴黎》之後，又一部Netflix影集引起了全球熱議！但很意外的是，這部《后翼棄兵》（The Queen's Gambit）從一開始無人關注到成為「爛番茄100%」超高分神劇只不過幾天的時間，除了因為女主角「貝絲」安雅泰勒喬伊（Anya Taylor-Joy）頻頻上熱搜的精靈系顏值之外，《后翼棄兵》毫無冷場的刺激劇情，也打破了所有人對「西洋棋」的刻板印象。以下整理了《后翼棄兵》5大看點，它不僅僅是一部女性作品，更是關於在逆境中成長的故事！</div>
+    <h4>Border 邊框</h4>
+    <div class="b">繼《艾蜜莉在巴黎》之後，又一部Netflix影集引起了全球熱議！但很意外的是，這部《后翼棄兵》（The Queen's Gambit）從一開始無人關注到成為「爛番茄100%」超高分神劇只不過幾天的時間，除了因為女主角「貝絲」安雅泰勒喬伊（Anya Taylor-Joy）頻頻上熱搜的精靈系顏值之外，《后翼棄兵》毫無冷場的刺激劇情，也打破了所有人對「西洋棋」的刻板印象。以下整理了《后翼棄兵》5大看點，它不僅僅是一部女性作品，更是關於在逆境中成長的故事！</div>
+    <h4>Margin 外邊界</h4>
+    <div class="c">繼《艾蜜莉在巴黎》之後，又一部Netflix影集引起了全球熱議！但很意外的是，這部《后翼棄兵》（The Queen's Gambit）從一開始無人關注到成為「爛番茄100%」超高分神劇只不過幾天的時間，除了因為女主角「貝絲」安雅泰勒喬伊（Anya Taylor-Joy）頻頻上熱搜的精靈系顏值之外，《后翼棄兵》毫無冷場的刺激劇情，也打破了所有人對「西洋棋」的刻板印象。以下整理了《后翼棄兵》5大看點，它不僅僅是一部女性作品，更是關於在逆境中成長的故事！</div>
+  </div>
+  <div class="boxModel2">
+    <div class="box-1">100X100</div>
+    <div class="box-2">margin:10px;</div>
+    <div class="box-3">padding:10px;</div>
+    <div class="box-4">border:10px</div>
+    <div class="box-5">margin:10px;<br>padding:10px;<br>border:10px</div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>13.display顯示方式</title>
+  <style>
+    .display {
+      text-align: left;
+      /*區塊在父元素中水平對齊的方式：左、中、右*/
+      background: #dedede;
+      padding: 1em;
+      margin: 1em;
+      height: 200px;
+      color: #fff;
+      text-align: center;
+    }
+    
+    .display .block {
+      display: block;
+      background: #39C;
+      width: 100px;
+      height: 50px;
+      margin: 20px;
+      padding: 20px;
+      vertical-align: middle;/*指定無效*/
+      line-height: 50px;/*解決垂直置中對齊的辦法*/
+    }
+    
+    .display .inline {
+      display: inline;
+      background: #F60;
+      width: 100px;
+      height: 50px;/*height指定無效*/
+      margin: 20px;/*margin指定無效*/
+      padding: 20px;/*padding只有左右有效，上下指定無效*/
+    }
+    
+    .display .inline-block {
+      display: inline-block;
+      background: #636;
+      width: 100px;
+      height: 50px;
+      margin: 20px;
+      padding: 20px;
+      text-align: right;
+      /*元素本身文字內容的水平對齊方式：左、中、右*/
+      vertical-align: middle;
+      /*區塊之間的垂直對齊方式：上、中、下*/
+    }
+  </style>
+</head>
+
+<body>
+  <h3>13.display顯示方式</h3>
+  <h4>display:block</h4>
+  <ul>
+    <li>可以指定寬度(width) 和高度(height)</li>
+    <li>可以設定上下左右外距(margin)</li>
+    <li>可以設定上下左右內距(padding)</li>
+  </ul>
+  <div class="display">
+    <span class="block">block</span>
+    <span class="block">block</span>
+  </div>
+  <h4>display:inline</h4>
+  <ul>
+    <li>不能指定寬度(width) 和 高度(height)，尺寸非固定會受 padding 值的影響</li>
+    <li>只能設定左右外距(margin-left & margin-right)，無法設定上下外距(margin-top & margin-bottom)</li>
+    <li>可以設定上下左右內距(padding)</li>
+  </ul>
+  <div class="display">
+    <div class="inline">inline</div>
+    <div class="inline">inline</div>
+  </div>
+  <h4>display:inline-block</h4>
+  <ul>
+    <li>可以指定 寬度(width) 和 高度(height)</li>
+    <li>可以設定上下左右外距(margin)</li>
+    <li>可以設定上下左右內距(padding)</li>
+  </ul>
+  <div class="display">
+    <div class="inline-block">inline-block</div>
+    <div class="inline-block">inline-block</div>
+  </div>
+</body>
+
+</html>

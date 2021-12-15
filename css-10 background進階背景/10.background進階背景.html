@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>10.background進階背景</title>
   <style>
-    body{
-      /* background-image: url(images/background.png); */
-      background-attachment: scroll;/* 跟內容一起滾動 */
-      /* background-attachment: fixed; */
+    body {
+      background-image: url(images/background.png);
+      /* background-attachment: scroll; */
+      /* 跟內容一起滾動 */
+      background-attachment: fixed;
     }
+    
     .box {
       width: 300px;
       height: 300px;
@@ -23,26 +25,27 @@
       float: left;
     }
     /* background-image 使用的一個或多個背景圖像 */
+    
     .box1 {
       background-color: #ccc;
     }
     
     .box2 {
       background-image: url(images/background.png);
-      background-position: -50px -50px;
+      background-position: -100px -100px;
       border-radius: 16px;
     }
     
     .box3 {
-      background: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+      background: linear-gradient(150deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
     }
     
     .box4 {
       background-image: url(images/background.png);
-      background-size: 60px;
+      background-size: 100px;
       /* background-repeat: repeat; */
       /* background-repeat: repeat-x; */
-      /* background-repeat: repeat-y; */
+      background-repeat: repeat-y;
       /* background-repeat: no-repeat; */
     }
     
@@ -63,15 +66,17 @@
       background-size: cover;
       background-repeat: no-repeat;
       padding: 10px;
-      background-clip: content-box; /* 預設值為 border-box */
-      
+      background-clip: content-box;
+      /* 預設值為 border-box */
     }
+    
     .box8 {
       background-image: url(images/background.png);
       background-size: cover;
       background-repeat: no-repeat;
       border: 10px solid #000;
-      background-origin: border-box;/* 預設值為 padding-box */
+      background-origin: border-box;
+      /* 預設值為 padding-box */
     }
   </style>
 </head>

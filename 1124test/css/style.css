@@ -1,20 +1,37 @@
 body {
+  font-size: 14px;
+  background: #ccc;
+}
+
+.wrap {
+  background: white;
+}
+
+h1 {
   font-size: 16px;
 }
 
-.info {
-}
+.info {}
 
-.info .phone {
-}
+.info .phone {}
 
 .info .social a img {}
 
-.mail a {
+.mail a {}
+
+.mail a:hover {}
+
+.info h1 {}
+
+.software ul.skills li span {
+  font-style: italic;
+  color: red;
 }
 
-.mail a:hover {
-}
-
-.info h1 {
+.header .pic {
+  width: 600px;
+  height: 340px;
+  background: #ccc url(../images/header.webp);
+  background-size: 600px;
+  color: #fff;
 }
