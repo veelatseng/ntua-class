@@ -18,21 +18,21 @@
       background: #369;
       top: 0;
       left: 0;
-      z-index: 1;
+      /* z-index: 1; */
     }
     
     .zindex .box2 {
       background: #F60;
       top: 50px;
       left: 50px;
-      z-index: 2;
+      /* z-index: 2; */
     }
     
     .zindex .box3 {
       background: #636;
       top: 100px;
       left: 100px;
-      z-index: 3;
+      /* z-index: 3; */
     }
     
     .zindex .box4 {
@@ -48,6 +48,7 @@
       left: 200px;
       z-index: 5;
     }
+    
     .textIndent {
       padding: 2rem;
       text-indent: 30px;
@@ -60,11 +61,11 @@
   <h3>16.z-index堆疊順序</h3>
 
   <div class="zindex">
-    <div class="box box1">z-index:1</div>
-    <div class="box box2">z-index:2</div>
-    <div class="box box3">z-index:3</div>
-    <div class="box box4">z-index:4</div>
-    <div class="box box5">z-index:5</div>
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
   </div>
   <ul>
     <li>預設值，推疊的順序與父層一樣。</li>
