@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20.transform_translate</title>
+  <style>
+    body{
+      padding: 3em;
+    }
+    .box {
+      background: #0e74cb;
+      border-radius: 6px;
+      height: 100px;
+      line-height: 100px;
+      width: 100px;
+      text-align: center;
+      margin-bottom: 1rem;
+      margin-left: 0;
+      position: relative;
+      transition: 1s ease-in-out;
+    }
+    .box:hover {
+      background: #ff2956;
+    }
+    .box1:hover {
+      transform: translateX(-30px);
+    }
+    
+    .box2:hover {
+      transform: translateY(30px);
+    }
+    
+    .box3:hover {
+      transform: translate(25px, 25px);
+    }
+  </style>
+</head>
+
+<body>
+  <h3>20.transform_translate</h3>
+  <p>transform: translateX(-30px);</p>
+  <div class="box box1">
+    translateX
+  </div>
+  <p>transform: translateY(30px);</p>
+  <div class="box box2">
+    translateY
+  </div>
+  <p>transform: translate(25px, 25px);</p>
+  <div class="box box3">
+    translate
+  </div>
+</body>
+
+</html>

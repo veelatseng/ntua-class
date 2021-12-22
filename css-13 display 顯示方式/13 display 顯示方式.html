@@ -7,7 +7,6 @@
   <title>13.display顯示方式</title>
   <style>
     .display {
-      text-align: left;
       /*區塊在父元素中水平對齊的方式：左、中、右*/
       background: #dedede;
       padding: 1em;
@@ -22,19 +21,24 @@
       background: #39C;
       width: 100px;
       height: 50px;
-      margin: 20px;
+      margin: 20px auto 20px auto;
       padding: 20px;
-      vertical-align: middle;/*指定無效*/
-      line-height: 50px;/*解決垂直置中對齊的辦法*/
+      vertical-align: middle;
+      /*指定無效*/
+      line-height: 50px;
+      /*解決垂直置中對齊的辦法*/
     }
     
     .display .inline {
       display: inline;
       background: #F60;
       width: 100px;
-      height: 50px;/*height指定無效*/
-      margin: 20px;/*margin指定無效*/
-      padding: 20px;/*padding只有左右有效，上下指定無效*/
+      height: 50px;
+      /*height指定無效*/
+      margin: 20px;
+      /*margin指定無效*/
+      padding: 20px;
+      /*padding只有左右有效，上下指定無效*/
     }
     
     .display .inline-block {
@@ -42,7 +46,7 @@
       background: #636;
       width: 100px;
       height: 50px;
-      margin: 20px;
+      /* margin: 20px; */
       padding: 20px;
       text-align: right;
       /*元素本身文字內容的水平對齊方式：左、中、右*/

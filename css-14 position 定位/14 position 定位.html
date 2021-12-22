@@ -10,6 +10,7 @@
       background: #dedede;
       height: 600px;
       width: 100vw;
+      position: relative;
     }
     
     .position>div {
@@ -21,6 +22,7 @@
       background: #666;
     }
     /* 無定位（預設值）：會照瀏覽器預設的配置自動排版，top、left、bottom、right無作用。*/
+    
     .position .static {
       background: #39C;
       display: static;
@@ -28,6 +30,7 @@
     /* 相對定位 */
     /* relative 在沒有設定任何屬性的情況下，會和static的呈現方式一樣。
     可以透過 top、left、bottom 與 right 的數值來改變位置。 */
+    
     .position .relative {
       background: #369;
       position: relative;
@@ -39,18 +42,22 @@
     /* 以瀏覽器視窗（可視範圍）來定位，就算頁面滾動元素還是會固定在相同位置。
     fixed 特別的地方是不會像relative一樣會在原圖層留下他的空間，若後面還有relative屬性的元素，則會黏在前面同是relative或是static屬性的元素下方。
     如果要將網頁印成文件，fixed element 會出現在每一頁的同一個位置上。 */
+    
     .position .fixed {
       background: #F60;
       position: fixed;
       right: 0;
-      top: 400px;
+      bottom: 0;
     }
     /* 絕對定位 */
     /* 該 element 不會跟隨著一般的排列規則，出現在相對的位置上，而是會跳脫原本排列規則，出現在以某個參考點為基準的絕對位置上。
     那麼這個參考點是什麼呢？該 element 會不斷的往父層找，找到最近一個有設定 position 屬性的 element。如果都找不到，則會直接以body為基準點。 */
+    
     .position .absolute {
       background: #636;
       position: absolute;
+      left: 50px;
+      top: 50px;
     }
   </style>
 </head>

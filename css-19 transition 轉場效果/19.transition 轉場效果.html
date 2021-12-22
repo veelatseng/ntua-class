@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>19.transition 轉場效果</title>
+  <style>
+    .box {
+      background: #0e74cb;
+      border-radius: 6px;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    
+    .box:hover {
+      background: #ff2956;
+    }
+    
+    .box-b {
+      transition: background 1s;
+    }
+    
+    .box-c {
+      background: #0e74cb;
+      border-radius: 6px;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      margin-bottom: 1rem;
+      position: relative;
+      transition: background .2s linear, border-radius .5s ease-in;
+    }
+    
+    .box-c:hover {
+      background: #ff2956;
+      border-radius: 50%;
+    }
+    
+    .box-d {
+      background: #0e74cb;
+      border-radius: 6px;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      margin-bottom: 1rem;
+      position: relative;
+      margin-left: 0;
+      transition: all 1s;
+    }
+    
+    .box-d:hover {
+      margin-left: 200px;
+    }
+    
+    .box-e {
+      background: #0e74cb;
+      border-radius: 6px;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      margin-bottom: 1rem;
+      position: relative;
+      margin-left: 0;
+      margin-top: 50px;
+      transition: margin-left .2s ease, margin-top 1s ease 1s;
+    }
+    
+    .wrap:hover .box-e {
+      margin-left: 200px;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>19.transition 轉場效果</h3>
+  <div class="box box-a">未使用</div>
+  <div class="box box-b">transition</div>
+  <div class="box box-c">兩種</div>
+  <div class="box box-d">bug</div>
+  <div class="wrap">
+    <div class="box box-e">移動</div>
+  </div>
+</body>
+
+</html>

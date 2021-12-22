@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20.transform_origin</title>
+  <style>
+    body{
+      padding: 3em;
+    }
+    .box {
+      background: #0e74cb;
+      border-radius: 6px;
+      height: 100px;
+      line-height: 100px;
+      width: 100px;
+      text-align: center;
+      margin-bottom: 1rem;
+      margin-left: 0;
+      position: relative;
+      transition: 1s ease-in-out;
+    }
+    .box:hover {
+      transform: rotate(-180deg);
+      background: #ff2956;
+    }
+    
+    .box1 {
+      transform-origin: left top;
+    }
+    
+    .box2 {
+      transform-origin: right bottom;
+    }
+    
+    .box3 {
+      transform-origin: 20px 30px;
+    }
+    
+
+  </style>
+</head>
+
+<body>
+  <h3>20.transform_origin</h3>
+  <p>transform-origin: left top;</p>
+  <div class="box box1">
+    left top
+  </div>
+  <p>transform-origin: right bottom;</p>
+  <div class="box box2">
+    right bottom
+  </div>
+  <p>transform-origin: 20px 30px;</p>
+  <div class="box box3">
+    20px 30px
+  </div>
+</body>
+
+</html>

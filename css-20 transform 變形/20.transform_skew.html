@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20.transform_skew</title>
+  <style>
+    body{
+      padding: 3em;
+    }
+    .box {
+      background: #0e74cb;
+      border-radius: 6px;
+      height: 100px;
+      line-height: 100px;
+      width: 100px;
+      text-align: center;
+      margin-bottom: 1rem;
+      margin-left: 0;
+      position: relative;
+      transition: 1s ease-in-out;
+    }
+    .box:hover {
+      background: #ff2956;
+    }
+    
+    .box1:hover {
+      transform: skewX(20deg);
+    }
+    
+    .box2:hover {
+      transform: skewY(-20deg);
+    }
+    
+    .box3:hover {
+      transform: skew(14deg, -45deg)
+    }
+  </style>
+</head>
+
+<body>
+  <h3>20.transform_skew</h3>
+  <p>transform: skewX(20deg);</p>
+  <div class="box box1">
+    skewX
+  </div>
+  <p>transform: skewY(-20deg);</p>
+  <div class="box box2">
+    skewY
+  </div>
+  <p>transform: skew(14deg, -45deg)</p>
+  <div class="box box3">
+    skew
+  </div>
+</body>
+
+</html>

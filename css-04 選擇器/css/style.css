@@ -1,4 +1,116 @@
-/* 
+/*
 外部樣式表 (external style sheet) ：
-將 CSS 設定寫在另外一個檔案中，再從 HTML 頁面中引入  
+將 CSS 設定寫在另外一個檔案中，再從 HTML 頁面中引入
 */
+
+
+/* 全域選擇器：
+    *符號為全域選擇器，選取頁面上所有元素 */
+
+
+/* * {
+      margin: 0;
+      padding: 0;
+      } */
+
+
+/* 類別選擇器 (Class selectors)：
+    .符號為類別選擇器，選擇頁面上相符的class名稱 */
+
+p {
+  margin-bottom: 1rem;
+}
+
+.test {
+  color: red;
+}
+
+
+/* ID選擇器 (ID selectors)：
+    #符號為ID選擇器，選取頁面上相符的ID名稱 */
+
+#test {
+  color: green;
+}
+
+
+/* 在原本的元素之前加入內容 */
+
+span {
+  padding: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+span:hover {
+  background: hotpink;
+  color: #fff;
+}
+
+span::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: red;
+  display: inline-block;
+}
+
+span::after {
+  content: "::after";
+  color: purple;
+}
+
+span:hover::after {
+  color: #fff;
+}
+
+ul {
+  margin: 2rem 0;
+}
+
+
+/* ul li:first-child {
+  color: red;
+}
+
+ul li:last-child {
+  color: blue;
+} */
+
+ul li:nth-child(odd) {
+  color: green;
+}
+
+.pseudo {}
+
+.pseudo p:first-child {
+  color: red;
+}
+
+.pseudo p:nth-child(2) {
+  color: orange;
+}
+
+.pseudo p:last-child {
+  color: blue;
+}
+
+.pseudo h4:nth-of-type(1) {
+  color: green;
+  /* first-of-type */
+}
+
+.pseudo h4:first-child {
+  color: yellow;
+  /* 無效 */
+}
+
+.pseudo h4:last-of-type {
+  color: green;
+}
+
+h5:empty {
+  width: 100px;
+  height: 40px;
+  background: pink;
+}

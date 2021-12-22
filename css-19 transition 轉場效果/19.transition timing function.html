@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>19.transition timing function</title>
+  <style>
+    .transition_test div {
+      width: 100px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background: #0e74cb;
+      color: #fff;
+      margin-bottom: 1rem;
+      /* 定義哪些CSS屬性會被轉場效果影響 */
+      transition-property: margin-left;
+      /* 定義轉場的持續時間 */
+      transition-duration: 3s;
+      /* 時間速率 */
+      /* transition-timing-function: ease; */
+      /* 開始進行轉場效果之前，所要等待的時間。 */
+      transition-delay: 0s;
+    }
+    
+    .transition_test:hover>div {
+      margin-left: calc(100% - 85px);
+    }
+    /* ---下列為各種 時間速率--- */
+    
+    .timing1 {
+      transition-timing-function: ease;
+    }
+    
+    .timing2 {
+      transition-timing-function: ease-in;
+    }
+    
+    .timing3 {
+      transition-timing-function: ease-out;
+    }
+    
+    .timing4 {
+      transition-timing-function: ease-in-out;
+    }
+    
+    .timing5 {
+      transition-timing-function: linear;
+    }
+    
+    .timing6 {
+      transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+    }
+    
+    .timing7 {
+      transition-timing-function: step-start;
+    }
+    
+    .timing8 {
+      transition-timing-function: step-end;
+    }
+    
+    .timing9 {
+      transition-timing-function: steps(4, end);
+    }
+  </style>
+</head>
+
+<body>
+  <h3>19.transition timing function</h3>
+  <div class="transition_test">
+    <div class="timing1">ease</div>
+    <div class="timing2">ease-in</div>
+    <div class="timing3">ease-out</div>
+    <div class="timing4">ease-in-out</div>
+    <div class="timing5">linear</div>
+    <div class="timing6">cubic-bezier</div>
+    <div class="timing7">step-start</div>
+    <div class="timing8">step-end</div>
+    <div class="timing9">steps(4, end)</div>
+  </div>
+</body>
+
+</html>
