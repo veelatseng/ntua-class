@@ -6,13 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>18.float浮動＆clear清除浮動</title>
   <style>
-
+    .float {
+      background: red;
+      overflow: hidden;
+      padding: 1rem;
+    }
+    
+    .box {
+      width: 100px;
+      height: 100px;
+      background: #ccc;
+      margin-bottom: 8px;
+      margin-right: 8px;
+      float: left;
+    }
+    
+    .clear {
+      clear: both;
+    }
   </style>
 </head>
 
 <body>
   <h3>18.float浮動＆clear清除浮動</h3>
-  <div class="float float">
+  <div class="float">
     <div class="box">1</div>
     <div class="box">2</div>
     <div class="box">3</div>

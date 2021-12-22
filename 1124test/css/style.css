@@ -4,34 +4,83 @@ body {
 }
 
 .wrap {
-  background: white;
+  background: #fff;
+  width: 1000px;
+  margin: 60px auto;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
-h1 {
-  font-size: 16px;
-}
 
-.info {}
+/* header */
 
-.info .phone {}
-
-.info .social a img {}
-
-.mail a {}
-
-.mail a:hover {}
-
-.info h1 {}
-
-.software ul.skills li span {
-  font-style: italic;
-  color: red;
+.header {
+  overflow: hidden;
 }
 
 .header .pic {
   width: 600px;
   height: 340px;
-  background: #ccc url(../images/header.webp);
-  background-size: 600px;
-  color: #fff;
+  float: left;
+  margin-right: 30px;
+}
+
+.header .pic img {
+  width: 600px;
+  height: 340px;
+}
+
+.header .info {}
+
+.header .info h1 {
+  font-size: 16px;
+  margin-bottom: 100px;
+}
+
+.header .info p {}
+
+.header .info .social {}
+
+.header .info .social a {}
+
+.header .info .social a img {
+  width: 32px;
+  height: 32px;
+}
+
+.header .info .mail {}
+
+.header .info .mail a {}
+
+.header .info .phone {}
+
+
+/* software */
+
+.software {}
+
+
+/* experience */
+
+.experience {}
+
+
+/* work  */
+
+.work {
+  overflow: hidden;
+}
+
+.work .pic {
+  width: 280px;
+  height: 200px;
+  float: left;
+  margin-right: 12px;
+  margin-left: 12px;
+  margin-bottom: 20px;
+}
+
+.work .pic img {
+  width: 280px;
+  height: 200px;
 }

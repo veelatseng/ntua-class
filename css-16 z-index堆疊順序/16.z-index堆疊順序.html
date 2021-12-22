@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>16.z-index堆疊順序/text-indent縮凸排</title>
   <style>
+    .zindex {
+      overflow: hidden;
+      height: 500px;
+    }
+    
     .zindex .box {
       width: 200px;
       height: 200px;
@@ -18,21 +23,21 @@
       background: #369;
       top: 0;
       left: 0;
-      /* z-index: 1; */
+      z-index: 8;
     }
     
     .zindex .box2 {
       background: #F60;
       top: 50px;
       left: 50px;
-      /* z-index: 2; */
+      z-index: 2;
     }
     
     .zindex .box3 {
       background: #636;
       top: 100px;
       left: 100px;
-      /* z-index: 3; */
+      z-index: 3;
     }
     
     .zindex .box4 {
@@ -49,10 +54,27 @@
       z-index: 5;
     }
     
+    .zindex .box6 {
+      background: #000;
+      top: 250px;
+      left: 250px;
+      z-index: 6;
+    }
+    
     .textIndent {
       padding: 2rem;
-      text-indent: 30px;
+      text-indent: 2em;
       background: #ccc;
+    }
+    
+    .aa {
+      width: 50px;
+      height: 50px;
+      background: yellow;
+      position: absolute;
+      left: 80px;
+      height: 80px;
+      z-index: 9;
     }
   </style>
 </head>
@@ -61,21 +83,24 @@
   <h3>16.z-index堆疊順序</h3>
 
   <div class="zindex">
-    <div class="box box1">1</div>
+    <div class="box box1">1
+      <div class="aa"></div>
+    </div>
     <div class="box box2">2</div>
     <div class="box box3">3</div>
     <div class="box box4">4</div>
     <div class="box box5">5</div>
+    <div class="box box6">6</div>
   </div>
   <ul>
     <li>預設值，推疊的順序與父層一樣。</li>
     <li>根據 number 決定堆疊順序，數字越大代表越上層，須為整數。</li>
     <li>繼承自父層的堆疊順序。</li>
   </ul>
-  <!-- <h3>16.text-indent縮凸排</h3>
+  <h3>16.text-indent縮凸排</h3>
   <div class="textIndent">
     繼《艾蜜莉在巴黎》之後，又一部Netflix影集引起了全球熱議！但很意外的是，這部《后翼棄兵》（The Queen's Gambit）從一開始無人關注到成為「爛番茄100%」超高分神劇只不過幾天的時間，除了因為女主角「貝絲」安雅泰勒喬伊（Anya Taylor-Joy）頻頻上熱搜的精靈系顏值之外，《后翼棄兵》毫無冷場的刺激劇情，也打破了所有人對「西洋棋」的刻板印象。以下整理了《后翼棄兵》5大看點，它不僅僅是一部女性作品，更是關於在逆境中成長的故事！
-  </div> -->
+  </div>
 </body>
 
 </html>
