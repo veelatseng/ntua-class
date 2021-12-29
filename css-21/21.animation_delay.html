@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>21.animation_delay</title>
+  <style>
+    body {
+      padding: 3em;
+    }
+    
+    .box {
+      background: #0e74cb;
+      border-radius: 6px;
+      height: 100px;
+      line-height: 100px;
+      width: 100px;
+      text-align: center;
+      position: relative;
+      left: 0;
+      animation-name: name;
+      /* 播放一次動畫需要的時間  */
+      animation-duration: 5s;
+      /* 動畫播放的次數，預設值為1次 */
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+    
+    @keyframes name {
+      from {
+        margin-left: 0px;
+      }
+      to {
+        margin-left: 200px;
+      }
+    }
+    
+    .red {
+      background: #f00;
+      animation-delay: -2s;
+    }
+    
+    .green {
+      background: #0a0;
+    }
+    
+    .blue {
+      background: #00c;
+      animation-delay: 2s;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>21.animation_delay</h2>
+  <div class="box red">
+    delay: -2s
+  </div>
+  <div class="box green">
+    delay: 0
+  </div>
+  <div class="box blue">
+    delay: 2s
+  </div>
+</body>
+
+</html>

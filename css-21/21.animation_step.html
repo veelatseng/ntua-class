@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>21.animation_delay</title>
+  <style>
+    body {
+      padding: 3em;
+    }
+    
+    .box {
+      background: #0e74cb;
+      border-radius: 6px;
+      height: 100px;
+      line-height: 100px;
+      width: 100px;
+      text-align: center;
+      position: relative;
+      left: 0;
+      animation-name: name;
+      /* 播放一次動畫需要的時間  */
+      animation-duration: 4s;
+      /* 動畫播放的次數，預設值為1次 */
+      animation-iteration-count: 1;
+      /* step-start跳過第一格 */
+      /* animation-timing-function: step-start; */
+      /* step-end跳過最後一格 */
+      animation-timing-function: step-end;
+    }
+    
+    @keyframes name {
+      0% {
+        left: 0;
+        background: red;
+      }
+      25% {
+        left: 50px;
+        background: green;
+      }
+      50% {
+        left: 100px;
+        background: blue;
+      }
+      75% {
+        left: 150px;
+        background: orange;
+      }
+      100% {
+        left: 200px;
+        background: #000;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h2>21.animation_step</h2>
+  <h3>animation-timing-function</h3>
+  <div class="box">
+    animation
+  </div>
+</body>
+
+</html>

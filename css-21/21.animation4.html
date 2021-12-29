@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>21.animation4</title>
+  <style>
+    body {
+      padding: 3em;
+    }
+    
+    .box {
+      color: #fff;
+      background: #0e74cb;
+      border-radius: 6px;
+      height: 100px;
+      line-height: 100px;
+      width: 100px;
+      text-align: center;
+      position: relative;
+      left: 0;
+      animation-name: name;
+      /* 播放一次動畫需要的時間  */
+      animation-duration: 2s;
+      animation-direction: alternate;
+      animation-iteration-count: 3;
+      animation-play-state: paused;
+    }
+    
+    @keyframes name {
+      0% {
+        margin-left: 0;
+      }
+      100% {
+        margin-left: 200px;
+      }
+    }
+    
+    .red {
+      background: red;
+      /* 預設值，不論動畫播放次數，結束後一律返回原始狀態 */
+      animation-fill-mode: none;
+    }
+    
+    .animation_test:hover .red {
+      animation-play-state: running;
+    }
+    
+    .green {
+      background: green;
+      /* 動畫結束後，保持在最後一個影格狀態。 */
+      animation-fill-mode: forwards;
+    }
+    
+    .animation_test:hover .green {
+      animation-play-state: running;
+    }
+    
+    .blue {
+      background: blue;
+      /* 動畫結束後，保持在第一個影格狀態 ( 但實際測試和 none 效果一樣)。 */
+      animation-fill-mode: backwards;
+    }
+    
+    .animation_test:hover .blue {
+      animation-play-state: running;
+    }
+    
+    .black {
+      background: black;
+      /* 依據動畫的次數或播放方向，保持在第一個影格或最後一個影格狀態 */
+      animation-fill-mode: both;
+    }
+    
+    .animation_test:hover .black {
+      animation-play-state: running;
+    }
+    
+    .car {
+      margin-top: 100px;
+      left: 0;
+      animation-name: carcar;
+      animation-duration: 2s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      display: block;
+      position: relative;
+    }
+    
+    @keyframes carcar {
+      0% {
+        left: 0;
+      }
+      100% {
+        left: 200px;
+      }
+    }
+    /* .car:hover {
+      animation-play-state: running;
+    } */
+    
+    .car .top {
+      width: 100px;
+      height: 50px;
+      display: block;
+      border-radius: 10px 10px 0 0;
+      position: relative;
+      background: red;
+      left: 50px;
+    }
+    
+    .car .bottom {
+      width: 200px;
+      height: 60px;
+      display: block;
+      border-radius: 10px 10px 0 0;
+      position: relative;
+      background: red;
+    }
+    
+    .car .bottom::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      background: black;
+      bottom: -25px;
+      left: 30px;
+    }
+    
+    .car .bottom::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      background: black;
+      bottom: -25px;
+      right: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>21.animation4</h2>
+  <h3>animation-fill-mode: </h3>
+  <div class="animation_test">
+    <p>none;預設值，不論動畫播放次數，結束後一律返回原始狀態</p>
+    <div class="box red">
+      none
+    </div>
+    <p>forwards;動畫結束後，保持在最後一個影格狀態。</p>
+    <div class="box green">
+      forwards
+    </div>
+    <p>backwards;動畫結束後，保持在第一個影格狀態 ( 但實際測試和 none 效果一樣)。</p>
+    <div class="box blue">
+      animation
+    </div>
+    <p>both;依據動畫的次數或播放方向，保持在第一個影格或最後一個影格狀態。</p>
+    <div class="box black">
+      animation
+    </div>
+  </div>
+  <div class="car">
+    <span class="top"></span>
+    <span class="bottom"></span>
+  </div>
+
+</body>
+
+</html>
