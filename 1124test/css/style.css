@@ -39,9 +39,13 @@ body {
 
 .header .info p {}
 
-.header .info .social {}
+.header .info .social {
 
-.header .info .social a {}
+}
+
+.header .info .social a {
+
+}
 
 .header .info .social a img {
   width: 32px;
@@ -62,8 +66,9 @@ body {
 
 /* experience */
 
-.experience {}
+.experience {
 
+}
 
 /* work  */
 
@@ -78,6 +83,8 @@ body {
   margin-right: 12px;
   margin-left: 12px;
   margin-bottom: 20px;
+  overflow: hidden;
+
 }
 
 .work .pic img {

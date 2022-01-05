@@ -19,38 +19,41 @@
       text-align: center;
       position: relative;
       left: 0;
-      animation-name: name;
+      animation-name: aaa;
       /* 播放一次動畫需要的時間  */
       animation-duration: 3s;
       /* 動畫播放的次數，預設值為1次 */
-      animation-iteration-count: 2;
+      animation-iteration-count: 3;
       animation-direction: alternate;
       animation-fill-mode: both;
     }
     /* from 表示起始，也可以用 0% 表示，to 表示結束，也可以用 100% 表示 */
-    
-    @keyframes name {
-      from {
+    /* @keyframes aaa {
+      0% {
         left: 0;
       }
-      to {
+      50% {
         left: 100px;
       }
-    }
+      100% {
+        left: 300px;
+      }
+    } */
     /* 如果同樣的百分比，則相同屬性會後蓋前  */
     /* 如果同樣有兩個 50%，內容的屬性也相同，則後方的 50% 會蓋掉前方的 50%，如果兩個屬性不同，則會在 50% 時同時執行。 */
-    /* @keyframes name {
+    /* @keyframes aaa {
       0% {
         background: #0e74cb;
       }
       50% {
         background: #f00;
       }
-      50% {
+      100% {
         background: #000;
       }
     } */
-    /* @keyframes name {
+    
+    @keyframes name {
       0% {
         background: #0e74cb;
         color: #000;
@@ -61,7 +64,7 @@
       50% {
         color: #fff;
       }
-    } */
+    }
   </style>
 </head>
 
